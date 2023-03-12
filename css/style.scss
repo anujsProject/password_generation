@@ -1,0 +1,148 @@
+$color-default: #777;
+$color-primary: #00235b;
+$color-offWhite: #f5f5f5;
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $color-offWhite;
+}
+
+body,
+input,
+button,
+a {
+  color: $color-default;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+body {
+  // border: 2px solid red;
+  background-color: #fff;
+  padding: 3rem;
+  line-height: 140%;
+}
+
+ul {
+  font-weight: 400;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+// Form
+.form {
+  margin-top: 6rem;
+
+  &__field {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    * {
+      display: inline-block;
+      width: 100%;
+      //   color: $color-white;
+    }
+    &__label {
+      margin-bottom: 1rem;
+      // font-weight: ;
+    }
+
+    &__input {
+      outline: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.4rem;
+      background-color: $color-offWhite;
+      font-size: inherit;
+      border: none;
+      border-bottom: 0.3rem solid transparent;
+      transition: all 0.2s;
+
+      &:focus {
+        border-bottom: 0.3rem solid $color-primary;
+      }
+    }
+
+    &__btn {
+      margin-top: 2rem;
+      width: fit-content;
+    }
+  }
+
+  &__helper {
+    font-size: 1.4rem;
+    &__para {
+      &--2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__password {
+      margin-top: 2rem;
+      font-weight: 600;
+
+      &__suggested {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.section {
+  &--form {
+    width: 50rem;
+    padding: 6rem;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 0 1rem 3rem #ccc;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 3rem;
+    color: $color-primary;
+  }
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+  width: fit-content;
+  border: none;
+  color: $color-default;
+  background-color: $color-offWhite;
+  box-shadow: 0 0.2rem 0.3rem #ccc;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.5rem 1rem #ccc;
+    cursor: pointer;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: #fff;
+    &:hover {
+      // background-color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+body,
+input,
+button,
+a {
+  color: #777;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+body {
+  background-color: #fff;
+  padding: 3rem;
+  line-height: 140%;
+}
+
+ul {
+  font-weight: 400;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.form {
+  margin-top: 6rem;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.form__field * {
+  display: inline-block;
+  width: 100%;
+}
+.form__field__label {
+  margin-bottom: 1rem;
+}
+.form__field__input {
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+  background-color: #f5f5f5;
+  font-size: inherit;
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.2s;
+}
+.form__field__input:focus {
+  border-bottom: 0.3rem solid #00235b;
+}
+.form__field__btn {
+  margin-top: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.form__helper {
+  font-size: 1.4rem;
+}
+.form__helper__para--2 {
+  font-size: 1.3rem;
+}
+.form__helper__password {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.form__helper__password__suggested {
+  color: #00235b;
+}
+
+.section--form {
+  width: 50rem;
+  padding: 6rem;
+  margin: auto;
+  margin-top: 5rem;
+  box-shadow: 0 1rem 3rem #ccc;
+}
+.section__header {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #00235b;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  color: #777;
+  background-color: #f5f5f5;
+  box-shadow: 0 0.2rem 0.3rem #ccc;
+  transition: all 0.1s ease-out;
+}
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0.5rem 1rem #ccc;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: #00235b;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
